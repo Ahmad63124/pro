@@ -1,0 +1,64 @@
+
+  .card-body{
+    line-height: 0.3em;
+    text-align:left;
+
+
+    
+  }
+  
+  .inner-image {
+    border-radius: 50px;
+    width: 90px; ;
+    height: 90px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  .im{
+    border-radius: 25px;
+    height: 150px;
+  }
+  .card{
+    border-radius: 25px;
+    margin: 20px;
+
+  }
+  .I{
+      display:inline-flex;
+
+  }
+  .gray{
+      color: gray;
+  }
+  .padd{
+    margin-top: -25px;
+
+     padding-bottom: -15px;
+    padding: 15px;
+  }
+  .store{
+    display:inline-flex;
+
+  }
+  .ctitle{
+    display: inline-flex;
+    
+  }
+  .rate{
+    padding-left:50px;
+    text-align:right;
+
+  }
+ /* button{
+    margin-bottom: 20px;
+
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+    width: 80%;
+   
+
+  }
+  */
+  

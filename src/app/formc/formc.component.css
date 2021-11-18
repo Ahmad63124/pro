@@ -1,0 +1,12 @@
+form{
+    margin: 50px;
+    background-color: white;
+    border-radius: 1%;
+}
+.form-group{
+    margin: 30px;
+}
+label{
+    margin: 20px;
+
+}

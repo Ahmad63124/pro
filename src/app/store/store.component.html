@@ -1,0 +1,35 @@
+<div>
+  
+
+
+<div class="store" *ngFor="let store of store">
+<div class="card" style="width: 17rem; ">
+    
+    <div class="m1">
+        <img class="card-img-top inner-image" src="{{store.image2}}" alt="" />
+        <img class="card-img-top im " src="{{store.image1}}" alt="" />
+      </div>
+    <div class="card-body ">
+      <div class="ctitle">
+      <h6 class="card-title col-8"><b>{{store.title}}</b></h6>
+      <p class=" card-title rate  "> {{store.rating}} </p>
+      <i class="fas fa-star icon "></i>
+      
+    </div>
+
+      <p class="card-text col-8  ">{{store.tyfood}}</p>
+      <div class="I">
+      <div class="padd">
+        <p class="card-text"><b>{{store.dis}}</b></p>
+        <p class="card-text gray">Distance</p>
+      </div>
+      <div class="padd">
+        <p class="card-text"><b>{{store.tim}}</b></p>
+        <p class="card-text gray "> Delivery Time</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  
+</div>
