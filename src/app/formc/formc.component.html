@@ -1,24 +1,55 @@
-<form>
-    <div class="form-group">
-      <label for="name">Store name</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+<form (ngSubmit)="onSubmit()" #studentForm="ngForm">
+    <div   class="form-group">
+      <label for="title">Store name</label>
+      <input type="text" class="form-control" id="title" 
+      [(ngModel)]="store.title" name="title"
+                 #title="ngModel"
+      >
     </div>
     <div class="form-group">
       <label for="cuisines">cuisines</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-    </div>
+      <input type="text" class="form-control" id="tyfood" 
+      [(ngModel)]="store.tyfood" name="tyfood"
+                 #tyfood="ngModel"
+      >
+        </div>
     <div class="form-group">
-      <label for="Distance">Distance</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-    </div>
+      <label for="dis">Distance</label>
+      <input type="text" class="form-control" id="dis" 
+      [(ngModel)]="store.dis" name="dis"
+                 #dis="ngModel"
+      >    </div>
     <div class="form-group">
-      <label for="DeliveryTime">Delivery Time</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-    </div>
+      <label for="tim">Delivery Time</label>
+      <input type="text" class="form-control" id="tim" 
+      [(ngModel)]="store.tim" name="tim"
+                 #tim="ngModel"
+      >     </div>
+      <div class="form-group">
+        <label for="rating">Rating </label>
+        <input type="text" class="form-control" id="rating" 
+        [(ngModel)]="store.rating" name="rating"
+                   #rating="ngModel"
+        >     </div>
     <div class="form-group">
-    <input type="file" ng-model="store.image">
+      <label for="image1">Cover image </label>
+      <input type="file" class="form-control" id="image1" 
+        [(ngModel)]="store.image1" name="image1"
+                   #image1="ngModel"
+        >
+   
   </div>
   <div class="form-group">
-      <button type="button" class="btn btn-light" routerLink="form">Click to add store</button>
+    <label for="image2">Store image </label>
+    <input type="file" class="form-control" id="image2" 
+      [(ngModel)]="store.image2" name="image2"
+                 #image2="ngModel"
+      >
+ 
+</div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-success" >Submit</button>
+      {{responseText}}
     </div>
   </form>
+  

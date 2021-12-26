@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { Stor } from '../stor';
 import { Store } from '../store';
 
 @Component({
@@ -8,11 +9,15 @@ import { Store } from '../store';
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
- 
+  
+
   constructor(private dataService: DataService) { }
-  store: Store[] = [];
+  //store: Store[] = [];
   ngOnInit(): void {
-    this.store = this.dataService.getStudents();
+  //  this.store = this.dataService.getStudents();
   }
+  @Input()
+  store: Stor[];
+
 
 }
